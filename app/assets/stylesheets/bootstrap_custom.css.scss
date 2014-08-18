@@ -1,0 +1,48 @@
+@import "http://fonts.googleapis.com/css?family=Open+Sans:400,700,300";
+
+.panel.custom-panel {
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+
+.container{
+  padding-top: 100px;
+  max-width: 800px;
+}
+
+.checkbox.custom-checkbox {
+  input[type=checkbox]{
+    position: initial;
+    margin-left: 0;
+  }
+}
+
+.devise-container {
+  footer {
+    a {
+      color: white;
+    }
+  }
+}
+
+.disabled.custom-disabled {
+  background-color: #c7cbd6;
+}
+
+a.custom-cancel-btn{
+  color: white !important;
+  text-decoration: none !important;
+}
+
+
+// These attributes are forced
+// because it must over-ride the inline 
+// styles that were added to the canvas wrapper
+// with jQuery
+
+.modal-crop-state {
+  position: relative !important;
+  border: #6CCAC9 1px dashed !important;
+  width: auto !important;
+  overflow: scroll !important;
+}

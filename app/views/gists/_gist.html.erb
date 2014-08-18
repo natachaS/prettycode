@@ -1,0 +1,19 @@
+<div class="jw jw-default" id="jw-<%= @gist.url %>">
+  <div class="jw-body">
+    <div class="jw-canvas">
+      <%= image_tag(@gist.visual.url, class: 'jw_image' ) %>
+    </div>
+    <%= coderay(@gist.content, @gist.language).html_safe %>
+  </div>
+
+  <div class="jw-footer clearfix">
+    <span class="jw-meta">
+      <%= link_to gist_url(@gist), target: 'blank' do %>
+        <span class="jw-title"><%= @gist.name %></span>
+      <% end %>
+    </span>
+    <%= link_to root_url, class: 'hosted pull-right', target: 'blank' do %>
+      Hosted with <span style= "color:red">&#10084;</span> by PrettyCode
+    <% end %>
+  </div>
+</div>

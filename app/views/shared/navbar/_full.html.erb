@@ -1,0 +1,5 @@
+<% if user_signed_in? %>
+  <%= render 'shared/navbar/authorized_content' %>
+<% else %>
+  <%= render 'shared/navbar/un_authorized_content' %>
+<% end %>

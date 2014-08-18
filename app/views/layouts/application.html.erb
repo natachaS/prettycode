@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PrettyCode</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  
+  <%= yield :head %>
+
+  <%= csrf_meta_tags %>  
+  <%= favicon_link_tag 'brush_icon.ico' %>
+</head>
+<body>
+
+  <%= render 'shared/navbar/full' %>
+  <div class="container">
+    <%= flash_messages %>
+    <%= yield %>
+    <%= render 'shared/footer' %>
+  </div>
+
+
+</body>
+</html>
